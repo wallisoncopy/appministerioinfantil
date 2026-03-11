@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bg-hero-gradient {
+    background: linear-gradient(135deg, #faf5ff 0%, #ede9fe 100%);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.faq-answer {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+:target {
+    scroll-margin-top: 100px;
+}
